@@ -1,7 +1,7 @@
   const anhNen = [
-      '../IMG/anh_background1.webp',
-      '../IMG/anh_background2.webp',
-      '../IMG/slide-imgjpg.webp'
+      'anh_background1.webp',
+      'anh_background2.webp',
+      'slide-imgjpg.webp'
     ];  
 
     let chiSo = 0;
