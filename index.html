@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/log_in.css">
+</head>
+<body background="../IMG/thiet-ke-noi-that-phong-khach-sang-trong-theo-8-nguyen-tac-co-ban.jpg">
+    <form action="trangchu.html" name="LOGIN" class="hop" onsubmit="return login()">
+        <h1>ĐĂNG NHẬP</h1>
+        <br>
+        <div class="input-group">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required><br>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required><br><br>
+        </div>
+
+        <div class="sign-in">
+            <a href="trangdangky.html" >Sign in</a>
+        </div>
+
+        <div class="nop">
+            <input type="submit" value="Log In" >
+            <button type="button" onclick="logout()">Đăng Xuất</button>
+        </div>
+        </form>
+        <script src="../JS/kiemtraTK.js"></script>
+</body>
+</html>

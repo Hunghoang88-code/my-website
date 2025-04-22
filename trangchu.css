@@ -1,0 +1,173 @@
+/* Reset & cơ bản */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------- Header ------------------- */
+#nen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: bisque;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 10px 40px;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Logo bên trái */
+.logo img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+}
+
+/* ------------------- Menu ------------------- */
+.muc {
+    display: flex;
+    gap: 20px;
+}
+
+.muc a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.muc a:hover {
+    color: black;
+    background-color: bisque;
+}
+
+/* Menu sản phẩm có dropdown */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu .menu-toggle {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #eee;
+}
+
+.menu.open .dropdown {
+    display: block;
+}
+
+/* ------------------- Danh sách sản phẩm ------------------- */
+.sanpham {
+    margin: 0px 100px;
+    border: 4px solid;
+}
+
+#danhsachnoithat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+.ghe {
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(89, 211, 211, 0.3);
+    font-size: x-large;
+    margin: 10px;
+    height: auto;
+    justify-content: space-between; /* Đẩy phần cuối xuống */
+}
+
+.ghe img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-color: black;
+    border: 1px solid;
+    
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid;
+    background-color: rgb(207, 200, 181);
+}
+
+p {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: auto;
+    border:solid aquamarine;
+    width: 150px;
+    font-size: large;
+    align-self: center; /* Căn giữa ngang */
+    padding: 10px;
+    background-color: rgb(96, 189, 189);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* ------------------- Footer ------------------- */
+footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: larger;
+    background-color: black;
+    color: white;
+}

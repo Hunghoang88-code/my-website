@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Trang sản phẩm</title>
+<link rel="stylesheet" href="../CSS/trangsanpham.css">
+</head>
+<body>
+
+<!-- THANH MENU CHÍNH -->
+<nav class="navbar">
+    <a href="trangchu.html" class="nav-link">Trang chủ</a>
+
+    <div class="menu" id="menuSanPham">
+    <a href="javascript:void(0)" class="menu-toggle">Sản Phẩm</a>
+    <div class="dropdown">
+        <a href="noithatphongkhach.html">Nội thất phòng khách</a>
+        <a href="noithatphongngu.html">Nội thất phòng ngủ</a>
+        <a href="noithatphongbep.html">Nội thất phòng bếp</a>
+    </div>
+    <a href="support.html" class="nav-link">Liên Hệ</a>
+    <a href="giohang.html" class="nav-link">Giỏ Hàng(<span id="cart-count">0</span>)</a>
+    </div>
+</nav>
+
+<!-- TÌM KIẾM -->
+<div class="timkiem">
+    <label for="search">Tìm Kiếm:</label>
+    <input type="text" id="search" placeholder="Nhập tên sản phẩm">
+</div>
+
+<!-- DANH SÁCH SẢN PHẨM -->
+
+        <div id="danhsachnoithat">
+            <h1>ĐỒ NỘI THẤT PHÒNG Bếp</h1>
+            <div class="ghe">
+                <img src="../IMG/bep_banghean.jpg" class="clickable-img">
+                <div class="ghe-info">
+                    <h2>Bàn Ăn Mặt Đá Cao Cấp Hebe DPBA1</h2>
+                </div>
+                <div class="ghe-khoi">
+                    <p>Giá: 1.850.000đ</p>
+                </div>
+                    <div class="ghe-khoi">
+                        <button class="add-to-cart"
+                        data-name="Bàn Ăn Mặt Đá Cao Cấp Hebe DPBA1"
+                        data-price="1850000"
+                        data-image="../IMG/bep_banghean.jpg">Mua</button>
+                    </div>
+            </div>
+            <div class="ghe">
+                <img src="../IMG/bep_tubep.jpg" class="clickable-img">
+                <div class="ghe-info">
+                    <h2>Tủ Bếp Gỗ Cánh Acrylic</h2>
+                </div>
+                <div class="ghe-khoi">
+                    <p>Giá: 1.350.000đ</p>
+                </div>
+                    <div class="ghe-khoi">
+                        <button class="add-to-cart"
+                        data-name="Tủ Bếp Gỗ Cánh Acrylic"
+                        data-price="1350000"
+                        data-image="../IMG/bep_tubep.jpg">Mua</button>
+                    </div>
+            </div>
+            <div class="ghe">
+                <img src="../IMG/bep_tulanh.jpg" class="clickable-img">
+                <div class="ghe-info">
+                    <h2>Tủ Lạnh Xiaomi Mijia 4 cánh 430L</h2>
+                </div>
+                <div class="ghe-khoi">
+                    <p>Giá: 8.000.000đ</p>
+                </div>
+                <div class="ghe-khoi">
+                    <button class="add-to-cart"
+                    data-name="Tủ Lạnh Xiaomi Mijia 4 cánh 430L"
+                    data-price="8000000"
+                    data-image="../IMG/bep_tulanh.jpg">Mua</button>
+                </div>
+            </div>
+        </div>
+        <div id="imgPopup" class="img-popup">
+            <span class="close">&times;</span>
+            <img class="popup-content" id="popupImage">
+          </div>
+        <footer>&copy; 2025. Website Bán Hàng Loại Nghiệp Dư. All Rights Reserved.</footer>
+                        <!-- SCRIPT -->
+        <script src="../JS/timkiem.js"></script>
+        <script src="../JS/anhtoandien.js"></script>
+        <script src="../JS/dropdown.js"></script>
+        <script src="../JS/giohang1.js"></script>
+    </body>
+</html>

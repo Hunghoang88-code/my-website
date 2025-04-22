@@ -1,0 +1,93 @@
+/* Reset cơ bản */
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Định dạng cho body - căn giữa form */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Định dạng tiêu đề ĐĂNG NHẬP */
+h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* -------------------- FORM -------------------- */
+/* Khối form bao ngoài (class="hop") */
+.hop {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.3); /* nền trong suốt nhẹ */
+}
+
+/* -------------------- INPUT -------------------- */
+/* Khối chứa mỗi dòng label + input */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Label cho ô input */
+.input-group label {
+  width: 100px; /* đảm bảo label cùng độ rộng */
+  font-size: 18px;
+}
+
+/* Input trong input-group */
+.input-group input {
+  flex: 1; /* input chiếm hết phần còn lại */
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Định dạng riêng cho input username và password */
+#username,
+#password {
+  width: 200px;
+  padding: 5px;
+}
+
+/* -------------------- LINK “Sign in” -------------------- */
+/* Khối bao link Sign in */
+.sign-in {
+  text-align: right;
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+/* Định dạng link */
+.sign-in a {
+  font-size: 14px;
+  color: brown;
+  text-decoration: none;
+}
+
+/* Hiệu ứng hover cho link */
+.sign-in a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------- NÚT SUBMIT & LOGOUT -------------------- */
+/* Khối chứa nút */
+.nop {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Nút Log In */
+.nop input {
+  padding: 10px 20px;
+  font-size: 16px;
+}

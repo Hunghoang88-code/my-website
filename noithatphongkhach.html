@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Trang sản phẩm</title>
+<link rel="stylesheet" href="../CSS/trangsanpham.css">
+</head>
+<body>
+
+<!-- THANH MENU CHÍNH -->
+<nav class="navbar">
+    <a href="trangchu.html" class="nav-link">Trang chủ</a>
+
+    <div class="menu" id="menuSanPham">
+    <a href="javascript:void(0)" class="menu-toggle">Sản Phẩm</a>
+    <div class="dropdown">
+        <a href="noithatphongkhach.html">Nội thất phòng khách</a>
+        <a href="noithatphongngu.html">Nội thất phòng ngủ</a>
+        <a href="noithatphongbep.html">Nội thất phòng bếp</a>
+    </div>
+    <a href="support.html" class="nav-link">Liên Hệ</a>
+    <a href="giohang.html" class="nav-link">Giỏ Hàng(<span id="cart-count">0</span>)</a>
+    </div>
+</nav>
+
+<!-- TÌM KIẾM -->
+<div class="timkiem">
+    <label for="search">Tìm Kiếm:</label>
+    <input type="text" id="search" placeholder="Nhập tên sản phẩm">
+</div>
+
+<!-- DANH SÁCH SẢN PHẨM -->
+
+<div id="danhsachnoithat">
+    <h1>đồ nội thất phòng khách</h1>
+    <div class="ghe">
+        <img src="../IMG/ghe1.jpg" class="clickable-img">
+        <div class="ghe-info">
+            <h2>Giường 2 tầng, giường gỗ thông không mối mọt KT</h2>
+        </div>
+        <div class="ghe-khoi">
+            <p>Giá: 2.645.000đ</p>
+        </div>
+        <div class="ghe-khoi">
+            <button class="add-to-cart"
+                data-name="Giường 2 tầng, giường gỗ thông không mối mọt KT"
+                data-price="2645000"
+                data-image="../IMG/ghe1.jpg">Mua</button>
+        </div>
+    </div>
+    <div class="ghe">
+        <img src="../IMG/ghe2.jpg" class="clickable-img">
+        <div class="ghe-info">
+            <h2>Sofa giường đổi góc | VEJLBY | vải polyester | xám | R244xS87/157xC86cm</h2>
+        </div>
+        <div class="ghe-khoi">
+            <p>Giá: 15.920.000 đ</p>
+        </div>
+        <div class="ghe-khoi">
+            <button class="add-to-cart"
+            data-name="Sofa giường đổi góc | VEJLBY | vải polyester | xám | R244xS87/157xC86cm"
+            data-price="15920000"
+            data-image="../IMG/ghe2.jpg">Mua</button>
+        </div>
+    </div>
+    <div class="ghe">
+        <img src="../IMG/ghe3.jpg" class="clickable-img">
+        <div class="ghe-info">
+            <h2>Sofa giường | FALSLEV | vải polyester | xám | R209xS85/108xC79cm</h2>
+        </div>
+        <div class="ghe-khoi">
+            <p>Giá: 6.930.000đ</p>
+        </div>
+        <div class="ghe-khoi">
+            <button class="add-to-cart"
+            data-name="Sofa giường | FALSLEV | vải polyester | xám | R209xS85/108xC79cm"
+            data-price="6930000"
+            data-image="../IMG/ghe3.jpg">Mua</button>
+        </div>
+    </div>
+    <div class="ghe">
+        <img src="../IMG/ghe4.jpg" class="clickable-img">
+        <div class="ghe-info">
+            <h2>Sofa 3 chỗ | GEDVED | vải polyester | xám nhạt | R210xS84xC85cm</h2>
+        </div>
+        <div class="ghe-khoi">
+            <p>Giá: 11.900.000đ</p>
+        </div>
+        <div class="ghe-khoi">
+            <button class="add-to-cart"
+            data-name="Sofa 3 chỗ | GEDVED | vải polyester | xám nhạt | R210xS84xC85cm"
+            data-price="11900000"
+            data-image="../IMG/ghe4.jpg">Mua</button>
+        </div>
+    </div>
+    <div class="ghe">
+        <img src="../IMG/ghe5.jpg" class="clickable-img">
+        <div class="ghe-info">
+            <h2>Sofa 2.5 chỗ | EGEDAL | vải polyester | xám | R170xS81xC78cm</h2>
+        </div>
+        <div class="ghe-khoi">
+            <p>Giá: 8.330.000 đ</p>
+        </div>
+        <div class="ghe-khoi">
+            <button class="add-to-cart"
+            data-name="Sofa 2.5 chỗ | EGEDAL | vải polyester | xám | R170xS81xC78cm"
+            data-price="8330000"
+            data-image="../IMG/ghe5.jpg">Mua</button>
+        </div>
+    </div>
+    <div class="ghe">
+        <img src="../IMG/ghe6.jpg" class="clickable-img">
+        <div class="ghe-info">
+            <h2>Sofa modul đổi góc | TERNDRUP | vải polyester | xám nhạt | R250xS88/176xC67cm</h2>
+        </div>
+        <div class="ghe-khoi">
+            <p>Giá: 36.900.000 đ </p>
+        </div>
+        <div class="ghe-khoi">
+            <button class="add-to-cart"
+            data-name="Giường gấp gọn cao cấp khung thépSofa modul đổi góc | TERNDRUP | vải polyester | xám nhạt | R250xS88/176xC67cm"
+            data-price="36900000 "
+            data-image="../IMG/ghe6.jpg">Mua</button>
+        </div>
+    </div>
+</div>
+<div id="imgPopup" class="img-popup">
+    <span class="close">&times;</span>
+    <img class="popup-content" id="popupImage">
+</div>
+<footer>&copy; 2025. Website Bán Hàng Loại Nghiệp Dư. All Rights Reserved.</footer>
+<!-- SCRIPT -->
+<script src="../JS/timkiem.js"></script>
+<script src="../JS/chuyenanhtrang.js"></script>
+<script src="../JS/anhtoandien.js"></script>
+<script src="../JS/giohang1.js"></script>
+
+</body>
+</html>

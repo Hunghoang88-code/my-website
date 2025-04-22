@@ -1,0 +1,74 @@
+body { /*chỉnh sửa phần thân*/
+    background-image: url("../IMG/anh_background1.webp");
+    background-size: 100%;
+    font-family: 'Times New Roman',sans-serif;
+    /*kiểu chữ: Time New Roman và kiểu không chân*/
+}
+h1, h2{ /*chỉnh sửa phần có kích cỡ chữ h1, h2*/
+    color: white; /*chữ màu trắng*/
+    background-color: black; /*nền của cỡ chữ h1,h2 là màu đen*/
+    font: bold; /*kiểu chữ in đậm*/
+    border-radius: 10px; /*bo tròn góc*/
+    text-align: center; /*chữ nằm ở giữa*/
+}
+div{
+    width: 60%;
+    justify-self: center;
+}
+.content { /*kêu class tên content trong html*/
+    margin: 20px 0; 
+    /*độ rộng của hộp 20px là căn trên dưới 0 là căn phải trái*/
+    background-color: #fcf2f2; /*màu nền của hộp là màu trắng*/
+    padding: 10px; /*khoảng cách của chữ với đường viền*/
+    box-shadow: 0 0 10px; /*chỉnh bóng của hộp*/
+    
+}
+.menu { /*điều chỉnh class menu ở html*/
+    width: 100%;
+    display: flex ; /*chỉnh cho các nội dung bên trong menu nằm theo hàng ngang*/
+    background: #191919; /*nền của menu là màu đen*/
+    padding: 10px; /*khoảng cách của nội dung trong menu cách viền*/
+    justify-content: center; /*các nội dung trong thanh menu nằm ở giữa*/
+    margin: -20px; /*chỉnh cho thanh menu tràn màn hình*/
+}
+
+.menu a { /*điều chỉnh nội dung của class menu ở html*/
+    color: white; /*chữ màu trắng*/
+    text-decoration: none; /*chỉnh cho nội dung không có hiệu ứng nào*/
+    padding: 20px ; /*khoảng cách giữa các nội dung + giữa nội dung với đường viền*/
+    transition: 0.4s; /*thời gian diễn ra hiệu ứng mượt*/
+    font-size: 15px; /*cỡ chữ 15*/
+}
+
+.menu a:hover { /*chỉnh hiệu ứng cho nội dung của class menu*/
+    background: #1ba2eb; /*nền hiệu ứng màu xanh*/
+    border-radius: 10px; /*bo tròn góc*/
+ 
+}
+footer { /*chỉnh chân trang*/
+    color: black; /*màu chữ của chân trang là đen*/
+    padding: 10px; /*khoảng cách giữa nội dung với mép trang*/
+    margin: 0 -20px 0; /*khoảng cách trên trái phải dưới*/
+    text-align: center; /*chỉnh cho chữ nằm ở giữa*/
+    margin: auto;
+}
+form { /*điều chỉnh thẻ form*/
+    display: flex; /*chỉnh và sắp xếp nội dung bên trong*/
+    flex-direction: column; /*sắp xếp theo chiều dọc xuống*/
+}
+label { /*điều chỉnh thẻ label*/
+    margin: 10px 0 5px; /*căn chỉnh cho nội dung không dính nhau*/
+    font-size: x-large;
+}
+input, textarea { /*chỉnh nội dung nhập vào và đoạn văn bản dài*/
+    font-family: 'Times New Roman',sans-serif;
+    /*kiểu chữ: Time New Roman, không chân*/
+    padding: 5px; /*nội dung nhập vào cách viền 5px*/
+    border: 1px  solid#c6c0c0; /*độ dày viền 1px và màu solid*/
+    border-radius: 5px; /*bo tròn góc của ô nhập vào*/
+}
+footer{
+    color: yellow;
+    background-color: #191919;
+    margin: 0px 19.3%;
+}

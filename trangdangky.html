@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/sign_in.css">
+</head>
+<body>
+    <form action="index.html" name="LOGIN" class="hop" onsubmit="return registerUser()">
+        <h1>Đăng Ký</h1><br>
+        <div class="input-group">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required><br>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+        <div class="gioitinh">
+            <div class="input-group">
+                <label for="nam">Nam </label>
+                <input type="checkbox" id="gioiTinh1" name="nam" value="Nam" >
+            </div>
+
+            <div class="input-group">
+                <label for="nu">Nữ </label>
+                <input type="checkbox" id="gioiTinh2" name="nu" value="Nữ">
+            </div>
+            <div class="input-group">
+                <label for="khac">Khác </label>
+                <input type="checkbox" id="gioiTinh3" name="khac" value="Khác">
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required><br><br>
+        </div>
+
+        <div class="input-group">
+            <label for="confirm-password">Nhập lại Password: </label>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+        </div>
+
+        <div>
+            <a href="index.html">quay lại trang đăng nhập</a>
+        </div>
+        <div class="nop">
+            <input type="submit" value="submit" >
+        </div>
+
+        </form>
+        <script src="../JS/kiemtraTK.js"></script>
+</body>
+</html>

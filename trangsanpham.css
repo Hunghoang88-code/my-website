@@ -1,0 +1,209 @@
+/* ===== RESET MẶC ĐỊNH CHO TRÌNH DUYỆT ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+/* ===== NAVBAR (Thanh menu chính) ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px 30px;
+  gap: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #333;
+}
+
+
+/* ===== DROPDOWN MENU trong NAVBAR ===== */
+.menu {
+  position: relative;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  min-width: 200px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.menu.open .dropdown {
+  display: block;
+}
+
+/* ===== TÌM KIẾM SẢN PHẨM ===== */
+.timkiem {
+  margin: 30px auto;
+  text-align: center;
+  font-size: large;
+}
+
+#search {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+}
+
+/* ===== DANH SÁCH SẢN PHẨM ===== */
+#danhsachnoithat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#danhsachnoithat h1 {
+  font-size: 24px;
+  margin-top: 40px;
+  color: #333;
+  text-align: center;
+}
+
+/* ===== TỪNG KHỐI SẢN PHẨM (ghe) ===== */
+.ghe {
+  margin: 0px 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.ghe img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border-color: #333;
+}
+.ghe-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ghe-gia{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ghe-nut{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ghe h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.ghe p {
+  font-size: 18px;
+  color: #444;
+  align-items: flex-start;
+}
+
+.ghe button {
+  font-size: 20px;
+  margin: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+/* ===== popup cho ảnh ===== */
+
+.img-popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.popup-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== FOOTER CUỐI TRANG ===== */
+footer {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: larger;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="../CSS/giohang.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="trangchu.html" class="nav-link">Trang chủ</a>
+
+        <div class="menu" id="menuSanPham">
+        <a href="javascript:void(0)" class="menu-toggle">Sản Phẩm</a>
+        <div class="dropdown">
+            <a href="noithatphongkhach.html">Nội thất phòng khách</a>
+            <a href="noithatphongngu.html">Nội thất phòng ngủ</a>
+            <a href="noithatphongbep.html">Nội thất phòng bếp</a>
+        </div>
+        </div>
+        <a href="support.html" class="nav-link">Liên Hệ</a>
+        <div class="gio-hang">
+            <a href="giohang.html">Giỏ Hàng</a>
+        </div>
+    </nav>
+    <h1>Giỏ hàng của bạn</h1>
+    <br><br><br>
+        <div id="cart-items"></div>
+        <p id="total">Tổng: 0 đ</p> 
+        <br>
+        <button class="thanh-toan">Thanh Toán</button>
+        <br>
+        <button id="clear-cart">🗑️ Xóa toàn bộ giỏ hàng</button>
+    <script src="../JS/giohang2.js"></script>
+    <script src="../JS/dropdown.js"></script>
+</body>
+</html>
