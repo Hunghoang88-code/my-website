@@ -13,6 +13,9 @@ body {
 
 /* ===== NAVBAR (Thanh menu chính) ===== */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   background-color: black;
@@ -32,7 +35,8 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #333;
+  background-color: aqua;
+  color: black;
 }
 
 
@@ -152,7 +156,7 @@ body {
 }
 
 .ghe p {
-  font-size: 18px;
+  font-size: 20px;
   color: #444;
   align-items: flex-start;
 }
@@ -162,6 +166,17 @@ body {
   margin: 20px;
   padding: 8px 16px;
   cursor: pointer;
+  border-radius: 10px;
+}
+.ghe button:hover {
+  transform: scale(1.1);
+  background-color: aqua;
+}
+.ghe:hover {
+  transform: scale(1.1); /* Phóng to 10% thay vì 5% */
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3); /* Đổ bóng rõ hơn */
+  background-color: rgba(89, 211, 211, 0.5); /* Thay đổi màu nền */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng mượt */
 }
 /* ===== popup cho ảnh ===== */
 
