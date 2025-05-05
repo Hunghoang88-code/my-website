@@ -1,148 +1,107 @@
-/* Reset cơ bản */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Định dạng cho body - căn giữa form */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
+  background-repeat: no-repeat;
 }
 
-/* Định dạng tiêu đề ĐĂNG NHẬP */
-h1 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  text-align: center;
-  color: #333;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-/* -------------------- FORM -------------------- */
-/* Khối form bao ngoài (class="hop") */
 .hop {
-  width: 350px;
+  width: 320px;
   padding: 30px;
-  border: none;
-  font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #333;
 }
 
-.hop:hover {
-  transform: translateY(-5px);
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #222;
 }
 
-/* -------------------- INPUT -------------------- */
-/* Khối chứa mỗi dòng label + input */
 .input-group {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-/* Label cho ô input */
 .input-group label {
-  width: 120px;
-  font-size: 18px;
-  color: #333;
-  font-weight: 500;
+  width: 90px;
+  font-size: 16px;
 }
 
-/* Input trong input-group */
 .input-group input {
   flex: 1;
-  padding: 10px;
+  padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
-}
-
-.input-group input:focus {
+  border-radius: 6px;
   outline: none;
-  border-color: #ff6f61;
 }
 
-/* Định dạng riêng cho input username và password */
-#username,
-#password {
+#username, #password {
   width: 200px;
-  padding: 10px;
 }
 
-/* -------------------- LINK “Sign in” -------------------- */
-/* Khối bao link Sign in */
 .sign-in {
   text-align: right;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin: 5px 0 10px;
 }
 
-/* Định dạng link */
 .sign-in a {
   font-size: 14px;
-  color: #ff6f61;
+  color: #0066cc;
   text-decoration: none;
-  font-weight: 500;
 }
 
-/* Hiệu ứng hover cho link */
 .sign-in a:hover {
   text-decoration: underline;
-  color: #e65b50;
 }
 
-/* -------------------- NÚT SUBMIT & LOGOUT -------------------- */
-/* Khối chứa nút */
 .nop {
   text-align: center;
   margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
 }
 
-/* Nút Log In và Đăng Xuất */
-.nop input,
-.nop button {
+.nop input, .nop button {
   padding: 10px 20px;
   font-size: 16px;
+  margin: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: 0.3s;
 }
 
 .nop input {
-  background: linear-gradient(90deg, #ff6f61, #ff9f80);
+  background-color: #007bff;
   color: white;
 }
 
 .nop input:hover {
-  background: linear-gradient(90deg, #e65b50, #ff8a6b);
-  transform: scale(1.05);
+  background-color: #0056b3;
 }
 
 .nop button {
-  background: linear-gradient(90deg, #ccc, #ddd);
-  color: #333;
+  background-color: #dc3545;
+  color: white;
 }
 
 .nop button:hover {
-  background: linear-gradient(90deg, #bbb, #ccc);
-  transform: scale(1.05);
+  background-color: #a71d2a;
 }
