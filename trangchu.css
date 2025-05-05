@@ -225,3 +225,48 @@ footer {
     background-color: black;
     color: white;
 }
+/* Biểu tượng cố định dưới góc phải */
+.icon-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 60px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+  }
+
+  /* Khung popup chứa iframe */
+  #iframe-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  #iframe-popup iframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+  }
+
+  /* Nút đóng */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
