@@ -37,7 +37,7 @@
                 <button class="add-to-cart"
                     data-name="Giường 2 tầng, giường gỗ thông không mối mọt KT"
                     data-price="2645000"
-                    data-image="screenshot_1744676588.png">Mua</button>
+                    data-image="screenshot_1744676588.png">Mua 🛒</button>
             </div>
             <div class="ghe">
                 <img src="ghe1.jpg" class="clickable-img">
@@ -46,7 +46,7 @@
                 <button class="add-to-cart"
                     data-name="Sofa giường đổi góc |VEJLBY|vải polyester | xám"
                     data-price="15920000"
-                    data-image="ghe1.jpg">Mua</button>
+                    data-image="ghe1.jpg">Mua 🛒</button>
             </div>
             <div class="ghe">
                 <img src="ghe3.jpg" class="clickable-img">
@@ -55,7 +55,7 @@
                 <button class="add-to-cart"
                     data-name="Sofa giường | FALSLEV | vải polyester | xám | R209xS85/108xC79cm"
                     data-price="6930000"
-                    data-image="ghe3.jpg">Mua</button>
+                    data-image="ghe3.jpg">Mua 🛒</button>
             </div>
             <div class="ghe">
                 <img src="ghe5.jpg" class="clickable-img">
@@ -64,7 +64,7 @@
                 <button class="add-to-cart"
                     data-name="Sofa 2.5 chỗ | EGEDAL | vải polyester | xám | R170xS81xC78cm"
                     data-price="8330000"
-                    data-image="ghe5.jpg">Mua</button>
+                    data-image="ghe5.jpg">Mua 🛒</button>
             </div>
             <div class="ghe">
                 <img src="ngu_guong.jpg" class="clickable-img">
@@ -73,7 +73,7 @@
                 <button class="add-to-cart"
                     data-name="Gương để bàn viền led hiệu Moônka-GP214"
                     data-price="450000"
-                    data-image="ngu_guong.jpg">Mua</button>
+                    data-image="ngu_guong.jpg">Mua 🛒</button>
             </div>
             <div class="ghe">
                 <img src="bep_tubep.jpg" class="clickable-img">
@@ -82,7 +82,7 @@
                 <button class="add-to-cart"
                     data-name="Tủ Bếp Gỗ Cánh Acrylic"
                     data-price="2645000"
-                    data-image="bep_tubep.jpg">Mua</button>
+                    data-image="bep_tubep.jpg">Mua 🛒</button>
             </div>
         </div> 
     </div>
@@ -90,10 +90,24 @@
         <span class="close">&times;</span>
         <img class="popup-content" id="popupImage">
     </div>
+    <!-- Popup iframe ẩn -->
+  <div id="iframe-popup">
+    <span class="close-btn" onclick="toggleIframe()">❌</span>
+    <iframe src="giohang.html"></iframe>
+  </div>
+
+  <!-- Nút bật -->
+  <button class="icon-button" onclick="toggleIframe()">🛒</button>
     <footer>&copy; 2025. Website Bán Hàng Loại Nghiệp Dư. All Rights Reserved.</footer>
     <script src="chuyenanhtrang.js"></script>
     <script src="anhtoandien.js"></script>
     <script src="giohang1.js"></script>
     <script src="dropdown.js"></script>
+    <script>
+        function toggleIframe() {
+          const popup = document.getElementById("iframe-popup");
+          popup.style.display = (popup.style.display === "flex") ? "none" : "flex";
+        }
+      </script>
 </body>
 </html>
