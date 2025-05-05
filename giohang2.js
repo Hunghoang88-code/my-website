@@ -79,5 +79,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Thêm tính năng thanh toán
+    document.querySelector('.thanh-toan').addEventListener('click', () => {
+        if (confirm('Xác nhận thanh toán? Giỏ hàng sẽ bị xóa sau khi thanh toán.')) {
+            localStorage.removeItem('cart');
+            cart = [];
+            renderCart();
+            alert('Thanh toán thành công! Cảm ơn bạn đã mua sắm.');
+        }
+    });
+
     renderCart();
 });
